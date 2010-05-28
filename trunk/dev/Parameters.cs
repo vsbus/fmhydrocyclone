@@ -562,7 +562,7 @@ namespace Hydrocyclone1
                 zg.GraphPane.Title.IsVisible = false;
                 zg.GraphPane.CurveList.Clear();
 
-                double lastx = 5e-4, dlastx = 0.5 * lastx;
+                double lastx = 5e-2, dlastx = 0.5 * lastx;
                 while (dlastx > 5e-8)
                 {
                     ValueClass cx = new ValueClass(lastx);
@@ -629,7 +629,7 @@ namespace Hydrocyclone1
                 zg.GraphPane.Title.IsVisible = false;
                 zg.GraphPane.CurveList.Clear();
 
-                double lastx = 5e-4, dlastx = 0.5 * lastx;
+                double lastx = 5e-2, dlastx = 0.5 * lastx;
                 while (dlastx > 5e-8)
                 {
                     ValueClass cx = new ValueClass(lastx);
@@ -698,7 +698,7 @@ namespace Hydrocyclone1
                 zg.GraphPane.Title.IsVisible = false;
                 zg.GraphPane.CurveList.Clear();
 
-                double lastx = 5e-4, dlastx = 0.5 * lastx;
+                double lastx = 5e-2, dlastx = 0.5 * lastx;
                 while (dlastx > 5e-8)
                 {
                     ValueClass cx = new ValueClass(lastx);
@@ -757,7 +757,7 @@ namespace Hydrocyclone1
                 zg.GraphPane.Title.IsVisible = false;
                 zg.GraphPane.CurveList.Clear();
 
-                double lastx = 5e-4, dlastx = 0.5 * lastx;
+                double lastx = 5e-2, dlastx = 0.5 * lastx;
                 while (dlastx > 5e-8)
                 {
                     ValueClass cx = new ValueClass(lastx);
@@ -828,7 +828,7 @@ namespace Hydrocyclone1
                 zg.GraphPane.Title.IsVisible = false;
                 zg.GraphPane.CurveList.Clear();
 
-                double lastx = 5e-4, dlastx = 0.5 * lastx;
+                double lastx = 5e-2, dlastx = 0.5 * lastx;
                 while (dlastx > 5e-8)
                 {
                     ValueClass cx = new ValueClass(lastx);
@@ -879,7 +879,7 @@ namespace Hydrocyclone1
                 zg.GraphPane.Title.IsVisible = false;
                 zg.GraphPane.CurveList.Clear();
 
-                double lastx = 5e-4, dlastx = 0.5 * lastx;
+                double lastx = 5e-2, dlastx = 0.5 * lastx;
                 while (dlastx > 5e-8)
                 {
                     ValueClass cx = new ValueClass(lastx);
