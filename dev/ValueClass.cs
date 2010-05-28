@@ -24,16 +24,54 @@ namespace Hydrocyclone1
             Value = val.Value;
         }
 
+        public ValueClass Round(int precision)
+        {
+            ValueClass result = new ValueClass(0, Defined);
+
+            if (Value == 0)
+            {
+                return result;
+            }
+
+            double pMin = Math.Pow(10, precision - 1);
+            double pMax = Math.Pow(10, precision);
+            double factor = 1;
+            const double eps = 1e-8;
+
+            result.Value = Value;
+
+            while (Math.Abs(result.Value) < pMin - eps)
+            {
+                result.Value *= 10;
+                factor *= 10;
+            }
+
+            while (Math.Abs(result.Value) >= pMax - eps)
+            {
+                result.Value /= 10;
+                factor /= 10;
+            }
+
+            result.Value = Math.Floor(result.Value + 0.5 + eps);
+            result.Value /= factor;
+            return result;
+        }
+
         public string ToStringWithRounding(int digits_count)
         {
-            if (!Defined) return UndefinedValue;
-            double p10 = Math.Pow(10.0, digits_count);
-            double val = Value * p10 + 1e-12;
-            double fval = Math.Floor(val);
-            if (val - fval >= 0.5)
-                fval += 1;
-            fval /= p10;
-            return fval.ToString();
+            //if (!Defined) return UndefinedValue;
+            //double p10 = Math.Pow(10.0, digits_count);
+            //double val = Value * p10 + 1e-12;
+            //double fval = Math.Floor(val);
+            //if (val - fval >= 0.5)
+            //    fval += 1;
+            //fval /= p10;
+            //return fval.ToString();
+
+            ValueClass val = Round(digits_count);
+            string res = Convert.ToString(val.Value);
+            res = val.Defined ? res : "";
+            return res;
         }
         public static bool IsValueString(String s)
         {
