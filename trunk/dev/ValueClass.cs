@@ -59,16 +59,9 @@ namespace Hydrocyclone1
 
         public string ToStringWithRounding(int digits_count)
         {
-            //if (!Defined) return UndefinedValue;
-            //double p10 = Math.Pow(10.0, digits_count);
-            //double val = Value * p10 + 1e-12;
-            //double fval = Math.Floor(val);
-            //if (val - fval >= 0.5)
-            //    fval += 1;
-            //fval /= p10;
-            //return fval.ToString();
-
-            ValueClass val = Round(digits_count);
+            double absValue = Math.Abs(Value);
+            int currentDigits = absValue <= 1 ? 1 : Convert.ToInt32(Math.Floor(Math.Log(absValue, 10) + 1e-9)) + 1;
+            ValueClass val = Round(Math.Max(digits_count, currentDigits));
             string res = Convert.ToString(val.Value);
             res = val.Defined ? res : "";
             return res;

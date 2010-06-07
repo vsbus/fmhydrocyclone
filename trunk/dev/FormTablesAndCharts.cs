@@ -583,7 +583,7 @@ namespace Hydrocyclone1
 
                     str = listBox_XAxis.Items[listBox_XAxis.SelectedIndex].ToString();
                    
-                    dataGridView1.Rows[i].Cells[1].Value = (Get_kth_List(str,cur_C_row)[i] / Get_Units(str).Coefficient).ToStringWithRounding(2);// / Parameters.ParameterUnitsStruct.x_red_50.Coefficient;
+                    dataGridView1.Rows[i].Cells[1].Value = (Get_kth_List(str,cur_C_row)[i] / Get_Units(str).Coefficient).ToStringWithRounding(5);// / Parameters.ParameterUnitsStruct.x_red_50.Coefficient;
 
                     for (int j = 1; j < listBox_YAxis1.Items.Count; ++j)
                     {
