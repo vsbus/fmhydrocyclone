@@ -108,32 +108,13 @@ namespace Hydrocyclone1
         public static ValueClass TextBoxToValue(System.Windows.Forms.TextBox tb)
         {
             ValueClass res = StringToValue(tb.Text);
-            /*
-            try
-            {
-                res.Value = Convert.ToDouble(tb.Text);
-                res.Defined = true;
-            }
-            catch (System.FormatException)
-            {
-                res.Value = 1;
-                res.Defined = false;
-            }
-            */
             return res;
         }
 
         public static String ValueToString(ValueClass val)
         {
-            string res = Convert.ToString(val.Value);
-            //int MaxNumLength = 7, i;
-            /*for (i = 0; i < res.Length; ++i)
-                if (res[i] == '.' || res[i] == ',')
-                    break;
-            while (i < res.Length && MaxNumLength - i > 0)
-                i++;            
-            */
-            //res = val.Defined ? res.Substring(0, i) : "<undefined>";
+            
+            string res = val.Value.ToString("0.##############################");
             res = val.Defined ? res : UndefinedValue;
             return res;
         }
