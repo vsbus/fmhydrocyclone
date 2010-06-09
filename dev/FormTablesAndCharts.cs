@@ -588,17 +588,17 @@ namespace Hydrocyclone1
                     for (int j = 1; j < listBox_YAxis1.Items.Count; ++j)
                     {
                         str = listBox_YAxis1.Items[j].ToString();
-                        dataGridView1.Rows[i].Cells[1+j].Value = (Get_kth_List(str, cur_C_row)[i] / Get_Units(str).Coefficient).ToStringWithRounding(2 + (str == "Du/D" ? 1 : 0));
+                        dataGridView1.Rows[i].Cells[1+j].Value = (Get_kth_List(str, cur_C_row)[i] / Get_Units(str).Coefficient).ToStringWithRounding(3);
                     }
 
                     str = comboBox_EtEredt.Text;
-                    dataGridView1.Rows[i].Cells[5].Value = (Get_kth_List(str, cur_C_row)[i] / Get_Units(str).Coefficient).ToStringWithRounding(2);
+                    dataGridView1.Rows[i].Cells[5].Value = (Get_kth_List(str, cur_C_row)[i] / Get_Units(str).Coefficient).ToStringWithRounding(3);
 
                     str = comboBox_CmCvC.Text + "u";
-                    dataGridView1.Rows[i].Cells[6].Value = (Get_kth_List(str, cur_C_row)[i] / Get_Units(str).Coefficient).ToStringWithRounding(2);
+                    dataGridView1.Rows[i].Cells[6].Value = (Get_kth_List(str, cur_C_row)[i] / Get_Units(str).Coefficient).ToStringWithRounding(3);
                     
                     str = comboBox_CmCvC.Text + "o";
-                    dataGridView1.Rows[i].Cells[7].Value = (Get_kth_List(str, cur_C_row)[i] / Get_Units(str).Coefficient).ToStringWithRounding(2);
+                    dataGridView1.Rows[i].Cells[7].Value = (Get_kth_List(str, cur_C_row)[i] / Get_Units(str).Coefficient).ToStringWithRounding(3);
                     /*
                     if (listBox_YAxis1.Items[listBox_YAxis1.SelectedIndex].ToString() == "D")
                         dataGridView1.Rows[i].Cells[2].Value = Data.D[cur_C_row][i].Value / Parameters.ParameterUnitsStruct.D.Coefficient;
