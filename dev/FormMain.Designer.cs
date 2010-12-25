@@ -49,6 +49,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.button2 = new System.Windows.Forms.Button();
             this.button_Load = new System.Windows.Forms.Button();
@@ -225,8 +226,8 @@
             this.dataGridView_SimulationListing.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridView_SimulationListing.Size = new System.Drawing.Size(490, 132);
             this.dataGridView_SimulationListing.TabIndex = 0;
-            this.dataGridView_SimulationListing.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_SimulationListing_CellClick);
             this.dataGridView_SimulationListing.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_SimulationListing_CellValueChanged);
+            this.dataGridView_SimulationListing.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_SimulationListing_CellClick);
             this.dataGridView_SimulationListing.CurrentCellChanged += new System.EventHandler(this.dataGridView_SimulationListing_CurrentCellChanged);
             this.dataGridView_SimulationListing.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_SimulationListing_CellContentClick);
             // 
@@ -891,12 +892,13 @@
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox2);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "Main";
-            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form1_FormClosed);
-            this.Activated += new System.EventHandler(this.Form1_Activated);
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.Activated += new System.EventHandler(this.Form1_Activated);
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form1_FormClosed);
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_SimulationListing)).EndInit();
             this.groupBox2.ResumeLayout(false);
