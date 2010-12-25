@@ -6,9 +6,9 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("CYCLONPLUS")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("Last Update 24.12.2010")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("NIKIFOS Ltd.")]
 [assembly: AssemblyProduct("CYCLONPLUS")]
 [assembly: AssemblyCopyright("Copyright ©  2010")]
 [assembly: AssemblyTrademark("NIKIFOS Ltd.")]

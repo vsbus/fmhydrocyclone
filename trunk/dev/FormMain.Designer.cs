@@ -107,6 +107,10 @@
             this.radioButton_f_small = new System.Windows.Forms.RadioButton();
             this.radioButton_F_Big = new System.Windows.Forms.RadioButton();
             this.zedGraphControl1 = new ZedGraph.ZedGraphControl();
+            this.panelLeft = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_SimulationListing)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -118,6 +122,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_Results2)).BeginInit();
             this.groupBox5.SuspendLayout();
             this.groupBox3.SuspendLayout();
+            this.panelLeft.SuspendLayout();
+            this.panel1.SuspendLayout();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -128,9 +135,10 @@
             this.groupBox1.Controls.Add(this.button_Remove);
             this.groupBox1.Controls.Add(this.button_New);
             this.groupBox1.Controls.Add(this.dataGridView_SimulationListing);
-            this.groupBox1.Location = new System.Drawing.Point(12, 12);
+            this.groupBox1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.groupBox1.Location = new System.Drawing.Point(0, 0);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(501, 183);
+            this.groupBox1.Size = new System.Drawing.Size(507, 183);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Simulation Listing";
@@ -281,9 +289,10 @@
             this.groupBox2.Controls.Add(this.radioButton_Calculated_n);
             this.groupBox2.Controls.Add(this.dataGrid_Inputs2);
             this.groupBox2.Controls.Add(this.dataGrid_Inputs1);
-            this.groupBox2.Location = new System.Drawing.Point(12, 201);
+            this.groupBox2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.groupBox2.Location = new System.Drawing.Point(0, 183);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(213, 470);
+            this.groupBox2.Size = new System.Drawing.Size(213, 474);
             this.groupBox2.TabIndex = 2;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Inputs";
@@ -545,9 +554,10 @@
             this.groupBox4.Controls.Add(this.button_units);
             this.groupBox4.Controls.Add(this.button1);
             this.groupBox4.Controls.Add(this.dataGridView_Results1);
-            this.groupBox4.Location = new System.Drawing.Point(231, 201);
+            this.groupBox4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupBox4.Location = new System.Drawing.Point(213, 183);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(277, 470);
+            this.groupBox4.Size = new System.Drawing.Size(294, 474);
             this.groupBox4.TabIndex = 3;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Results";
@@ -738,9 +748,10 @@
             this.groupBox5.Controls.Add(this.radioButton_f_fo_fu_small);
             this.groupBox5.Controls.Add(this.radioButton_G_G_red);
             this.groupBox5.Controls.Add(this.zedGraphControl2);
-            this.groupBox5.Location = new System.Drawing.Point(519, 340);
+            this.groupBox5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupBox5.Location = new System.Drawing.Point(0, 324);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(461, 331);
+            this.groupBox5.Size = new System.Drawing.Size(481, 333);
             this.groupBox5.TabIndex = 2;
             this.groupBox5.TabStop = false;
             // 
@@ -808,14 +819,15 @@
             // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.zedGraphControl1);
             this.groupBox3.Controls.Add(this.comboBox_AxisType1);
             this.groupBox3.Controls.Add(this.radioButton_Ff);
             this.groupBox3.Controls.Add(this.radioButton_f_small);
             this.groupBox3.Controls.Add(this.radioButton_F_Big);
-            this.groupBox3.Controls.Add(this.zedGraphControl1);
-            this.groupBox3.Location = new System.Drawing.Point(519, 12);
+            this.groupBox3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.groupBox3.Location = new System.Drawing.Point(0, 0);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(461, 324);
+            this.groupBox3.Size = new System.Drawing.Size(481, 324);
             this.groupBox3.TabIndex = 1;
             this.groupBox3.TabStop = false;
             // 
@@ -882,17 +894,54 @@
             this.zedGraphControl1.Size = new System.Drawing.Size(450, 288);
             this.zedGraphControl1.TabIndex = 0;
             // 
+            // panelLeft
+            // 
+            this.panelLeft.Controls.Add(this.groupBox4);
+            this.panelLeft.Controls.Add(this.groupBox2);
+            this.panelLeft.Controls.Add(this.groupBox1);
+            this.panelLeft.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panelLeft.Location = new System.Drawing.Point(0, 24);
+            this.panelLeft.Name = "panelLeft";
+            this.panelLeft.Size = new System.Drawing.Size(507, 657);
+            this.panelLeft.TabIndex = 4;
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.groupBox5);
+            this.panel1.Controls.Add(this.groupBox3);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(507, 24);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(481, 657);
+            this.panel1.TabIndex = 5;
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.aboutToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(988, 24);
+            this.menuStrip1.TabIndex = 6;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // aboutToolStripMenuItem
+            // 
+            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(115, 20);
+            this.aboutToolStripMenuItem.Text = "About CYCLONPLUS";
+            this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(988, 670);
-            this.Controls.Add(this.groupBox5);
-            this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.groupBox3);
-            this.Controls.Add(this.groupBox4);
-            this.Controls.Add(this.groupBox2);
+            this.ClientSize = new System.Drawing.Size(988, 681);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panelLeft);
+            this.Controls.Add(this.menuStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
             this.Text = "CYCLONPLUS";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -913,7 +962,12 @@
             this.groupBox5.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
+            this.panelLeft.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -976,6 +1030,10 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.Button button_TablesAndGraphsRun;
+        private System.Windows.Forms.Panel panelLeft;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
     }
 }
 
