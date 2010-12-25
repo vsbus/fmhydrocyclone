@@ -15,6 +15,8 @@ namespace Hydrocyclone1
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            CheckProtection();
+
             List<Simulation> sim_list = Program.SimulationList_Current;
             
             dataGridView_SimulationListing.RowCount = sim_list.Count;
@@ -88,6 +90,37 @@ namespace Hydrocyclone1
             Program.ProgramStatus = Program.StatusRunning;
 
             dataGridView_SimulationListing.CurrentCell = dataGridView_SimulationListing.Rows[0].Cells["SimulationName"];
+        }
+
+        private void CheckProtection()
+        {
+            if (ProtectionOK(702090) == false)
+            {
+                MessageBox.Show(null, "A suitable WIBU_BOX entry wasn't found", "Protection");
+                Close();
+            }
+        }
+        private bool ProtectionOK(int usercode)
+        {
+            bool res = false;
+            try
+            {
+                WIBUKEYLib.WibukeyClass wk = new WIBUKEYLib.WibukeyClass();
+                if (wk != null)
+                {
+                    wk.SetBoxEntryForEncryption();
+                    wk.WkBoxSimUsed = false;
+                    wk.FirmCode = 619;
+                    wk.UserCode = usercode;
+                    wk.Encrypt();
+                    res = wk.LastErrorCode == 0;
+                }
+            }
+            catch (Exception e)
+            {
+            }
+
+            return res;
         }
 
         public  void Fill_DataGridView_Row(DataGridViewRow r, String parameter_name, UnitStruct units)
@@ -590,6 +623,11 @@ namespace Hydrocyclone1
         {
             AboutBox aboutBox = new AboutBox();
             aboutBox.ShowDialog();
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            CheckProtection();
         }
     }
 }
