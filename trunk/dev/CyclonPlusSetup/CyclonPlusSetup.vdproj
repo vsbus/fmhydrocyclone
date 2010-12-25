@@ -63,6 +63,24 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_787550F4ECD2462F9C212C601CE5FBDE"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_7E6EB6E27B377E7FD1EFC908B7DF4C9E"
+        "OwnerKey" = "8:_85CCF58A51B10D2BDF426A99528D85FD"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_85CCF58A51B10D2BDF426A99528D85FD"
+        "OwnerKey" = "8:_297964FAAEC04491A17100EE094E5127"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_91D3F68A6F60474DBA163C3C65C950CE"
         "OwnerKey" = "8:_297964FAAEC04491A17100EE094E5127"
         "MsmSig" = "8:_UNDEFINED"
@@ -89,6 +107,12 @@
         {
         "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_2B38B863650DD3091F54D36DE8C62479"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_85CCF58A51B10D2BDF426A99528D85FD"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -174,14 +198,14 @@
             {
             "Enabled" = "11:TRUE"
             "PromptEnabled" = "11:TRUE"
-            "PrerequisitesLocation" = "2:2"
+            "PrerequisitesLocation" = "2:1"
             "Url" = "8:"
             "ComponentsUrl" = "8:"
                 "Items"
                 {
                     "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:Microsoft.Net.Framework.2.0"
                     {
-                    "Name" = "8:.NET Framework 2.0"
+                    "Name" = "8:.NET Framework 2.0 (x86)"
                     "ProductCode" = "8:Microsoft.Net.Framework.2.0"
                     }
                 }
@@ -337,6 +361,77 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_787550F4ECD2462F9C212C601CE5FBDE"
+            {
+            "SourcePath" = "8:..\\CyclonPlus.ico"
+            "TargetName" = "8:CyclonPlus.ico"
+            "Tag" = "8:"
+            "Folder" = "8:_F09FAB9A616140E8B757912514A41449"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_7E6EB6E27B377E7FD1EFC908B7DF4C9E"
+            {
+            "SourcePath" = "8:Wibukey.dll"
+            "TargetName" = "8:Wibukey.dll"
+            "Tag" = "8:"
+            "Folder" = "8:_F09FAB9A616140E8B757912514A41449"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_85CCF58A51B10D2BDF426A99528D85FD"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:Interop.WIBUKEYLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_85CCF58A51B10D2BDF426A99528D85FD"
+                    {
+                    "Name" = "8:Interop.WIBUKEYLib.dll"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:Interop.WIBUKEYLib.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_F09FAB9A616140E8B757912514A41449"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_91D3F68A6F60474DBA163C3C65C950CE"
             {
             "AssemblyRegister" = "3:1"
@@ -434,6 +529,28 @@
             "Property" = "8:ProgramMenuFolder"
                 "Folders"
                 {
+                    "{9EF0B969-E518-4E46-987F-47570745A589}:_F8B039FE6D91483B93BD799565ABBA4E"
+                    {
+                    "Name" = "8:NIKIFOS Ltd"
+                    "AlwaysCreate" = "11:FALSE"
+                    "Condition" = "8:"
+                    "Transitive" = "11:FALSE"
+                    "Property" = "8:_17C43228AB6F428F9232C93F1B0D3F2E"
+                        "Folders"
+                        {
+                            "{9EF0B969-E518-4E46-987F-47570745A589}:_BF5F6FE2476E4B5BAB183ED9F924FB42"
+                            {
+                            "Name" = "8:CYCLONPLUS"
+                            "AlwaysCreate" = "11:FALSE"
+                            "Condition" = "8:"
+                            "Transitive" = "11:FALSE"
+                            "Property" = "8:_6F01C91D4A8641D1A448D360DF2B9B83"
+                                "Folders"
+                                {
+                                }
+                            }
+                        }
+                    }
                 }
             }
             "{3C67513D-01DD-4637-8A68-80971EB9504F}:_F09FAB9A616140E8B757912514A41449"
@@ -476,7 +593,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:CYCLONPLUS"
         "ProductCode" = "8:{7C006C12-7CC5-46D1-9B66-8B53CA705C0D}"
-        "PackageCode" = "8:{8F74BE23-F89C-4B53-B208-248F3A00CB8A}"
+        "PackageCode" = "8:{99E8F34F-8808-4CCC-8E59-80911D51FBEC}"
         "UpgradeCode" = "8:{03D77149-5817-497F-A74E-75A71901652E}"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:FALSE"
@@ -595,6 +712,34 @@
         }
         "Shortcut"
         {
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_595F564B09034CC8A9E1DCCE88180409"
+            {
+            "Name" = "8:CYCLONPLUS"
+            "Arguments" = "8:"
+            "Description" = "8:"
+            "ShowCmd" = "3:1"
+            "IconIndex" = "3:0"
+            "Transitive" = "11:FALSE"
+            "Target" = "8:_297964FAAEC04491A17100EE094E5127"
+            "Folder" = "8:_BF5F6FE2476E4B5BAB183ED9F924FB42"
+            "WorkingFolder" = "8:_F09FAB9A616140E8B757912514A41449"
+            "Icon" = "8:_787550F4ECD2462F9C212C601CE5FBDE"
+            "Feature" = "8:"
+            }
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_98AADD4492CD4046B2EE0472AC385D51"
+            {
+            "Name" = "8:CYCLONPLUS"
+            "Arguments" = "8:"
+            "Description" = "8:"
+            "ShowCmd" = "3:1"
+            "IconIndex" = "3:0"
+            "Transitive" = "11:FALSE"
+            "Target" = "8:_297964FAAEC04491A17100EE094E5127"
+            "Folder" = "8:_FAD3C23285354FEEAE55A6AA053CABE8"
+            "WorkingFolder" = "8:_F09FAB9A616140E8B757912514A41449"
+            "Icon" = "8:_787550F4ECD2462F9C212C601CE5FBDE"
+            "Feature" = "8:"
+            }
         }
         "UserInterface"
         {
@@ -996,7 +1141,7 @@
         {
             "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_297964FAAEC04491A17100EE094E5127"
             {
-            "SourcePath" = "8:..\\obj\\Debug\\CyclonPlus.exe"
+            "SourcePath" = "8:..\\obj\\Release\\CyclonPlus.exe"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_F09FAB9A616140E8B757912514A41449"
