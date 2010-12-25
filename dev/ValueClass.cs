@@ -81,12 +81,12 @@ namespace Hydrocyclone1
         public void WriteToStream(System.IO.StreamWriter sw)
         {
             sw.WriteLine(Defined);
-            sw.WriteLine(Value);
+            sw.WriteLine(Value.ToString().Replace(System.Globalization.NumberFormatInfo.CurrentInfo.NumberDecimalSeparator, "."));
         }
         public void ReadFromStream(System.IO.StreamReader sr)
         {
             Defined = Convert.ToBoolean(sr.ReadLine());
-            Value = Convert.ToDouble(sr.ReadLine());
+            Value = Convert.ToDouble(sr.ReadLine().Replace(".", System.Globalization.NumberFormatInfo.CurrentInfo.NumberDecimalSeparator));
         }
         public static ValueClass StringToValue(String s)
         {
