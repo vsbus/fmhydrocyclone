@@ -106,13 +106,13 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_2B38B863650DD3091F54D36DE8C62479"
+        "OwnerKey" = "8:_85CCF58A51B10D2BDF426A99528D85FD"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_85CCF58A51B10D2BDF426A99528D85FD"
+        "OwnerKey" = "8:_2B38B863650DD3091F54D36DE8C62479"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -255,7 +255,7 @@
             "SharedLegacy" = "11:FALSE"
             "PackageAs" = "3:1"
             "Register" = "3:1"
-            "Exclude" = "11:FALSE"
+            "Exclude" = "11:TRUE"
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
@@ -306,7 +306,7 @@
             "SharedLegacy" = "11:FALSE"
             "PackageAs" = "3:1"
             "Register" = "3:1"
-            "Exclude" = "11:FALSE"
+            "Exclude" = "11:TRUE"
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
@@ -357,7 +357,7 @@
             "SharedLegacy" = "11:FALSE"
             "PackageAs" = "3:1"
             "Register" = "3:1"
-            "Exclude" = "11:FALSE"
+            "Exclude" = "11:TRUE"
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
@@ -593,7 +593,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:CYCLONPLUS"
         "ProductCode" = "8:{7C006C12-7CC5-46D1-9B66-8B53CA705C0D}"
-        "PackageCode" = "8:{99E8F34F-8808-4CCC-8E59-80911D51FBEC}"
+        "PackageCode" = "8:{B3C78296-F458-4F79-B167-03ACD04B2CEB}"
         "UpgradeCode" = "8:{03D77149-5817-497F-A74E-75A71901652E}"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:FALSE"
