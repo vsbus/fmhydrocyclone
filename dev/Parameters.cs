@@ -451,7 +451,7 @@ namespace Hydrocyclone1
             }
             static public ValueClass Eval_x_o_50_From_()
             {
-                ValueClass res = new ValueClass(.5e-3), dres = res / 2;
+                ValueClass res = GetMaxX50Value() / 2, dres = res / 2;
 
                 while (dres.Value > 1e-18)
                 {
@@ -468,9 +468,14 @@ namespace Hydrocyclone1
 
                 return res;
             }
+
+            private static ValueClass GetMaxX50Value()
+            {
+                return new ValueClass(0.5 * 10 * 1e-3);
+            }
             static public ValueClass Eval_x_u_50_From_()
             {
-                ValueClass res = new ValueClass(.5e-3), dres = res / 2;
+                ValueClass res = GetMaxX50Value() / 2, dres = res / 2;
 
                 while (dres.Value > 1e-18)
                 {
@@ -493,7 +498,7 @@ namespace Hydrocyclone1
             }
             static public ValueClass Eval_x_From_G(ValueClass y)
             {
-                ValueClass res = new ValueClass(.5e-3), dres = res / 2;
+                ValueClass res = GetMaxX50Value() / 2, dres = res / 2;
 
                 while (dres.Value > 1e-18)
                 {
